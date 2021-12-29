@@ -1,0 +1,141 @@
+body{
+    margin:0;padding:0;
+    }
+    
+    #header
+    {width:100vw-50px;
+    height: 65px;
+    top:0px;
+    background:#cdfcf1;
+    font-size:210%;
+    font-family: 'Kanit', sans-serif;
+    color:BLACK;
+    padding: 20px 0px 15px 50px;
+    
+    }
+    
+    nav
+    {
+    width:100vw-50px;
+    height:55px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    }
+    
+    nav button
+    {
+    margin:20px 25px 10px 0px;
+    width:130px;
+    height:40px;
+    font-size:110%;
+    font-family: 'Poppins', sans-serif;
+    color:#ff1076;
+    text-align:center;
+    border:none;
+    border-radius:5%;
+    }
+    nav button:hover
+    {
+    animation: expand 0.35s linear forwards;
+    
+    }
+    
+    
+    
+    
+    .note
+    {
+    margin: 25px;
+    width: 260px;
+    height: 250px;
+    border:3px solid #cdfcf1;
+    border-radius: 3px 3px 3px 5% ;
+    box-shadow: 2px 2px 8px black;
+    overflow:hidden;
+    float:left;
+    }
+    
+    .note .but
+    {
+    width: 260px;
+    height: 30px;
+    display:flex;
+    justify-content:flex-end;
+    flex-flow: nowrap row;
+    }
+    .note .but #edit
+    {
+    background:green;
+    width:30px;height:30px;
+    border-radius:50%;
+    border:none;
+    margin:3px;
+    }
+    .note .but #edit:hover
+    {
+    animation: expandg 0.3s linear both;
+    
+    }
+    .note .but #delete
+    {
+    background:red;
+    width:30px;height:30px;
+    border-radius:50%;
+    border:none;
+    margin:3px;
+    }
+    .note .but #delete:hover
+    {
+    animation: expandr 0.3s linear both;
+    }
+    .note .texti
+    {
+    width:240px;
+    height:200px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    margin:10px;
+    font-size:125%;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 3px 3px 3px 5% ;
+    }
+    
+    textarea
+    {border: none;
+    background-color: transparent;
+    outline: none;
+    resize:none;
+    
+    width:240px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    margin:10px;
+    font-size:125%;
+    font-family: 'Rubik', sans-serif;
+    }
+    
+    @keyframes expand
+    {
+    0%{}
+    
+    100%{color:white;background:#cdfcf1;}
+    }
+    
+    @keyframes expandg
+    {
+    0%{}
+    
+    100%{color:#2c3d34;background:#cdfcf1;border-radius:5%;}
+    }
+    
+    @keyframes expandr
+    {
+    0%{}
+    
+    100%{color:red;background:#cdfcf1;border-radius:5%;}
+    }
+    
+    
+    .hidden{display:none;}
+    
